@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var contador_pc = 0
     var score_player = document.querySelector("#score_player")
     var score_pc = document.querySelector("#score_pc")
+    var game_over = ""
 
 
 
@@ -16,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var RPSimg = document.createElement("img");
     //Establecer atributos a la imagen
     RPSimg.src = "assets/img/rock-paper-scissors.png";
-    RPSimg.height = "300";
+    RPSimg.height = "250";
     RPSimg.style.objectFit = "cover";
-    RPSimg.alt = "rock";
+    RPSimg.alt = "rock,paper,scissors";
 
     // Agregar la imagen al contenedor
     imagenContainer.appendChild(RPSimg);
@@ -81,6 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (contador_rep == repeat && contador_rep > 0.5){
             //Game over
+            game_over = 1
+            localStorage.setItem('game_over', game_over);
 
             //agregar la clase d-none a #select
             var select = document.getElementById("select");

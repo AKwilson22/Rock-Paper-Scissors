@@ -57,7 +57,7 @@ function start() {
         var section_repeat = document.getElementById("section-repeat");
         section_repeat.classList.add("d-none");
         //elmininar la clase d-none de #select
-        var select = document.getElementById("select");
+        let select = document.getElementById("select");
         select.classList.remove("d-none");
 
 
