@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Contador -->
+    <div class="counter">
+        <!-- Espacio estetico -->
+        <p></p>
+        <!-- Contador del jugador -->
+        <p class="title-score text-center">You <br><span class="score blue" id="score_player">0</span></p>
+        <!-- Separador de contador -->
+        <p class="score white">-</p>
+        <!-- Contador de la maquina -->
+        <p class="title-score text-center">PC <br><span class="score red" id="score_pc">0</span></p>
+        <!-- Espacio estetico -->
+        <p></p>
+    </div>
+
+    <!-- seleccionar la cantidad de repeticiones -->
+    <section id="section-repeat">
+        <div class="d-flex justify-content-center">
+            <div>
+                <h2 class="text-center mb-0">al mejor de ?</h2>
+                <div class="container-buttons">
+                    <div class="screen">
+                        <p class="result">0</p>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <button id="button-7" onclick="button_7()">7</button>
+                            <button id="button-8" onclick="button_8()">8</button>
+                            <button id="button-9" onclick="button_9()">9</button>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <button id="button-4" onclick="button_4()">4</button>
+                            <button id="button-5" onclick="button_5()">5</button>
+                            <button id="button-6" onclick="button_6()">6</button>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <button id="button-1" onclick="button_1()">1</button>
+                            <button id="button-2" onclick="button_2()">2</button>
+                            <button id="button-3" onclick="button_3()">3</button>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <button id="button-all-clear" onclick="all_clear()">⬅</button>
+                            <button id="button-0" onclick="button_0()">0</button>
+                            <button id="button-equal" onclick="start()">▶</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <p id="img-rps" class="text-center">
+                <!-- <img src="assets/img/rock-paper-scissors.png" height="300" style="object-fit: cover;" alt="rock-paper-scissors"> -->
+            </p>
+        </section>
+
+        <section id="select" class="d-none">
+            <h2 class="white text-center select-text">Selecciona tu jugada</h2>
+            <div class="d-flex justify-conteny-between text-center">
+                <p><img src="assets/img/rock.png" alt="rock" style="cursor: pointer;" width="60%" onclick="select_rock()"></p>
+                <p><img src="assets/img/paper.png" alt="paper" style="cursor: pointer;" width="60%" onclick="select_paper()"></p>
+                <p><img src="assets/img/scissors.png" alt="scissors" style="cursor: pointer;" width="60%" onclick="select_scissors()"></p>          
+            </div>
+        </section>
+
+
+        <!-- Seccione de resultado -->
+        <div id="win" class="d-none">
+            <p class="text-center game-over green">You <br> Win</p>
+
+        </div>
+        <div id="lose" class="d-none">
+            <p class="text-center game-over red">You <br> Lose</p>
+
+        </div>
+        <div id="draw" class="d-none">
+            <p class="text-center game-over white">Draw</p>
+        </div>
+    
+
+
+
+
+
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/buttons.js"></script>
+        <script src="assets/js/gameplay.js"></script>
+</body>
+</html>
