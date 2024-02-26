@@ -157,7 +157,6 @@ function battle(){
 function reload(){
      //recuperar la variable
      var game = localStorage.getItem('game_over');
-     console.log(game+" asdasd" )
      if (game === 1){
         console.log ("el juego a terminado, desde gameplay.js")
      }else { if (game === "") {
@@ -237,7 +236,6 @@ function game_load(){
 function reload_select(){
     if (contador_rep > .5 && game_over != 1){
     let draw = document.getElementById("select");
-    console.log("abcdefg")
     draw.classList.remove("d-none");
     }setTimeout(reload_select, 500);
 };
