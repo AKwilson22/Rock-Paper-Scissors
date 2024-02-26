@@ -229,14 +229,14 @@ function game_load(){
             //agregar la clase d-none a #select
             var select = document.getElementById("select");
             select.classList.add("d-none");
-            }
+            } 
 };
 
 
 function reload_select(){
     if (contador_rep > .5 && game_over != 1){
-    let draw = document.getElementById("select");
-    draw.classList.remove("d-none");
-    }setTimeout(reload_select, 500);
-};
+    let sect_select = document.getElementById("select");
+    sect_select.classList.remove("d-none");
+    }
+}setTimeout(reload_select, 1500);
 
