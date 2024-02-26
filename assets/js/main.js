@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
+        /* Se movio esta función a js de gameplay
 
         //para aprovechar el temporizador agregare la actualización del score   
         
@@ -98,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }else{
                 var lose = document.getElementById("lose");
                 lose.classList.remove("d-none");
-            }}}
+            }}}  */
 
     }, 800); //1000 equivale a un segundo
 });
